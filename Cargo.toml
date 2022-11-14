@@ -1,0 +1,14 @@
+[package]
+name = "bevy_mod_extra_extensions"
+version = "0.1.0"
+edition = "2021"
+description = "misc bevy extension traits"
+keywords = ["bevy", "extension", "traits"]
+categories = ["game-development", "graphics"]
+readme = "README.md"
+license = "MIT OR Apache-2.0"
+
+[dependencies.bevy]
+version = "0.9"
+default-features = false
+features = ["render", "bevy_asset"]
