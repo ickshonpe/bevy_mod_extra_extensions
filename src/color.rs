@@ -1,6 +1,6 @@
 use bevy::prelude::*;
 
-pub trait ColorWithExt {
+pub trait ExtraColorExt {
     fn with_red(self, value: f32) -> Self;
     fn with_green(self, value: f32) -> Self;
     fn with_blue(self, value: f32) -> Self;
@@ -10,7 +10,7 @@ pub trait ColorWithExt {
     fn with_alpha(self, value: f32) -> Self;
 }
 
-impl ColorWithExt for Color {
+impl ExtraColorExt for Color {
     #[inline]
     #[must_use]
     fn with_red(mut self, r: f32) -> Self {

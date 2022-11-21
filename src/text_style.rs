@@ -1,12 +1,12 @@
 use bevy::prelude::*;
 
-pub trait TextStyleWithExt {
+pub trait ExtraTextStyleExt {
     fn with_font(self, font: Handle<Font>) -> Self;
     fn with_size(self, size: f32) -> Self;
     fn with_color(self, color: Color) -> Self;
 }
 
-impl TextStyleWithExt for TextStyle {
+impl ExtraTextStyleExt for TextStyle {
     #[inline]
     #[must_use]
     fn with_font(mut self, font: Handle<Font>) -> Self {
